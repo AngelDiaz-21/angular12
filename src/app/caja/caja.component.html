@@ -1,0 +1,9 @@
+<div style="border: 5px red solid">
+    <p>Holaaa, soy AADC, saludos terricola!</p>
+    <!--Para renderiza la variable status que se encuentra en caja.component.ts -->
+    <p>Input Status: {{ statusCaja }}</p>
+    <!-- <button onclick="onClickCaja($event)">Send Data Outside</button> -->
+    <!-- Otra forma de realizar lo anterior, con los parentesis se indica que va a ejecutar una función que se encuentra en ts -->
+    <button (click)="onClickCaja($event)">Send Data Outside</button>
+</div>
+
