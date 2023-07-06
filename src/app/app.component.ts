@@ -10,6 +10,8 @@ export class AppComponent {
   title = 'angular12';
   myStatus = 'my Status Angel';
 
+  bandera = true;
+
   constructor(){
     
   }

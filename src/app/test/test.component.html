@@ -1,4 +1,17 @@
 
 <div style="border: 5px solid green;">
+    
+    <!-- Contenedor banana -->
+    <!-- En las comillas se pone la variable a modificar  -->
+    <!-- 1 ejemplo: Modificando el mensaje en tiempo real -->
+    <div style="display: block;">
+        <P>{{ textMessage }}</P>
+        <input type="text" [(ngModel)]="textMessage">
+    </div>
+    
+    <!-- 2 ejemplo: Suma de numeros  -->
     <button (click) = "onShowData()">Show data</button>
+    <input type="number" [(ngModel)]="number1">
+    <input type="number" [(ngModel)]="number2">
+    <input type="number" [(ngModel)]="result">
 </div>

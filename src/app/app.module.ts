@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CajaComponent } from './caja/caja.component';
 import { TestComponent } from './test/test.component';
+import { FormsModule } from '@angular/forms';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CajaComponent,
-    TestComponent
+    TestComponent,
+    LifecycleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,3 +8,13 @@
 <app-caja [status] = 'myStatus' (onSendDataStatus)="printDataAppCaja($event)"></app-caja>
 
 <app-test name="Angel" lastName="Cortés" (onSendData)="printMessage($event)"></app-test>
+
+<!-- <app-lifecycle notification="activo"></app-lifecycle> -->
+<input type="text" [(ngModel)]="myStatus">
+
+<!-- Si cumple se va a renderizar el componente -->
+<button (click)="bandera = !bandera">Show ngDestroy</button>
+<div *ngIf="bandera">
+    <app-lifecycle [notification]="myStatus"></app-lifecycle>
+</div>
+

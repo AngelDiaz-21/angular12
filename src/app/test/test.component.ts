@@ -13,7 +13,14 @@ export class TestComponent {
 
   constructor() { }
 
+  textMessage: string = 'Holaaa';
+
+  number1:number = 0;
+  number2:number = 0;
+  result:number = 0;
+
   onShowData(){
+    this.result = (this.number1) + (this.number2);
     this.onSendData.emit('General data ' + this.name +' '+ this.lastName);
   }
 
